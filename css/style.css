@@ -1,0 +1,43 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.hide {
+  display: none;
+}
+#result {
+  margin: 10vh auto;
+  text-align: center;
+  max-width: 600px;
+  padding: 24px;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+#result h1 {
+  padding: 12px;
+}
+#result button {
+  margin-bottom: 12px;
+}
+
+.fade-in-up {
+  animation: fadeInUp;
+  animation-duration: 300ms;
+  animation-fill-mode: both;
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
